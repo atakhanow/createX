@@ -2,6 +2,7 @@
 
 :root {
   --brand-red: #ff3f3a;
+  --brand-gradient: #f75e05;
   --brand-black: #1e212c;
   --barnd-white: #ffffff;
   --brand-pink: #fedad4;
@@ -12,9 +13,9 @@
 }
 
 .container {
-  max-width: 75rem;
+  max-width: 1230px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0;
 }
 
 html {
@@ -34,8 +35,6 @@ ol {
 
 body {
   font-family: "Lato", sans-serif;
-  background-image: url(/images/shapes.svg);
-  background-repeat: no-repeat;
 }
 
 /* Header styles stars */
@@ -65,7 +64,7 @@ body {
 }
 
 .header__button1 {
-  background-color: var(--brand-red);
+  background-image: linear-gradient(to right, #ff3f3a, #f75e05);
   border-radius: 4px;
   padding: 5px;
   color: var(--barnd-white);
@@ -89,6 +88,8 @@ body {
 .hero {
   padding: 120px 0px;
   background-color: var(--brand-pink);
+  background-image: url(/images/shapes.svg);
+  background-repeat: no-repeat;
 }
 
 .hero__wrapper {
@@ -141,7 +142,7 @@ body {
 }
 
 .hero__button2 {
-  background-color: var(--brand-red);
+  background-image: linear-gradient(to right, #ff3f3a, #f75e05);
   color: var(--barnd-white);
   font-weight: 700;
   padding: 10px 24px;
@@ -328,3 +329,70 @@ body {
   color: var(--brand-gray);
 }
 /* Courses ends */
+
+/* Benefits starts */
+.benefits {
+  margin: 120px;
+}
+
+.benefits__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.benefits__top {
+  text-align: center;
+}
+
+.benefits__top-span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.benefits__top-title {
+  font-weight: 900;
+  font-size: 46px;
+}
+
+.beneits__top-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--brand-gray);
+}
+
+.benefits__top-button {
+  padding: 8px;
+}
+
+.benefits__top-button:active {
+  color: var(--brand-red);
+  border: 2px solid var(--brand-red);
+  border-radius: 4px;
+}
+
+.benefits__top-button i {
+  padding: 5px;
+}
+
+.benefits__left {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__title {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.benefits__description {
+  width: 495px;
+  color: var(--brand-gray);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* Benefits ends */
